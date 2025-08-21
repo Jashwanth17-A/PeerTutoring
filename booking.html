@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Session - PeerTutor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>PeerTutor</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="tutor.html" class="nav-link">Tutors</a>
+                <a href="booking.html" class="nav-link active">Booking</a>
+                <a href="feedback.html" class="nav-link">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="booking-container">
+                <h2 class="page-title">Book a Tutoring Session</h2>
+                
+                <div class="tutor-summary">
+                    <h3>Session with John Smith</h3>
+                    <p>Subject: Mathematics</p>
+                    <p>Rate: $25/hour</p>
+                </div>
+
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="sessionDate">Select Date</label>
+                        <input type="date" id="sessionDate" name="sessionDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sessionTime">Select Time</label>
+                        <select id="sessionTime" name="sessionTime" required>
+                            <option value="">Choose a time</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sessionDuration">Session Duration</label>
+                        <select id="sessionDuration" name="sessionDuration" required>
+                            <option value="">Select duration</option>
+                            <option value="1">1 hour</option>
+                            <option value="1.5">1.5 hours</option>
+                            <option value="2">2 hours</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sessionTopic">Session Topic (Optional)</label>
+                        <textarea id="sessionTopic" name="sessionTopic" placeholder="What would you like to focus on in this session?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentName">Your Name</label>
+                        <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentEmail">Your Email</label>
+                        <input type="email" id="studentEmail" name="studentEmail" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="total-cost">
+                        <h3>Estimated Cost: $25 - $50</h3>
+                        <p class="cost-note">Final cost depends on session duration</p>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Confirm Booking</button>
+                        <a href="tutor.html" class="btn-secondary">Cancel</a>
+                    </div>
+                </form>
+
+                <!-- Confirmation Message (hidden by default, would be shown with JavaScript) -->
+                <div class="confirmation-message" style="display: none;">
+                    <div class="confirmation-content">
+                        <h3>🎉 Booking Confirmed!</h3>
+                        <p>Your tutoring session has been successfully booked.</p>
+                        <div class="confirmation-details">
+                            <p><strong>Tutor:</strong> John Smith</p>
+                            <p><strong>Subject:</strong> Mathematics</p>
+                            <p><strong>Date:</strong> [Selected Date]</p>
+                            <p><strong>Time:</strong> [Selected Time]</p>
+                            <p><strong>Duration:</strong> [Selected Duration]</p>
+                        </div>
+                        <p class="confirmation-note">A confirmation email will be sent to your email address.</p>
+                        <a href="index.html" class="btn-primary">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 PeerTutor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
